@@ -50,6 +50,15 @@ new Vue({
 
     }
 
+  },
+
+  filters: {
+
+    currency(price) {
+
+      return '$'.concat(price.toFixed(2));
+
+    }
   }
 
 });
